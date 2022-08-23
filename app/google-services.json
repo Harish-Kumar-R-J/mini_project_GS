@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380942848887",
+    "project_id": "mini-project-f450a",
+    "storage_bucket": "mini-project-f450a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380942848887:android:cffba51a0ff3e3fa1b8772",
+        "android_client_info": {
+          "package_name": "com.example.mini_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380942848887-af90qt6u4bdovd0hm6ltfjlmn0fqma9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDLvdYXtuNXVXZpsOB7ujecQp951b0kvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380942848887-af90qt6u4bdovd0hm6ltfjlmn0fqma9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

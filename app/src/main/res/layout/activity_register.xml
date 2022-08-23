@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:id="@+id/register_layout">
+
+    <ScrollView
+        android:id="@+id/register_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/register_const_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_uname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+                app:endIconMode="clear_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_uname_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Name"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/register_uname"-->
+            <!--        android:hint="User Name"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="0dp"-->
+            <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--        app:layout_constraintRight_toRightOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent"-->
+            <!--        android:layout_marginTop="150dp"-->
+            <!--        app:layout_constraintHeight_percent="0.06"-->
+            <!--        app:layout_constraintWidth_percent="0.90"-->
+            <!--        android:layout_marginLeft="30dp"-->
+            <!--        android:layout_marginRight="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                android:layout_marginRight="30dp"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/red"
+                app:helperTextEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_uname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_id_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/email_id"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="0dp"-->
+            <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--        app:layout_constraintRight_toRightOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/register_uname"-->
+            <!--        android:layout_marginTop="25dp"-->
+            <!--        android:layout_marginLeft="30dp"-->
+            <!--        android:layout_marginRight="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                app:helperTextTextColor="@color/red"
+                app:helperTextEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_id"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_password_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/register_progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:visibility="invisible"
+                />
+            <!--    <EditText-->
+            <!--        android:id="@+id/register_password"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="0dp"-->
+            <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--        app:layout_constraintRight_toRightOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/email_id"-->
+            <!--        android:layout_marginTop="25dp"-->
+            <!--        android:layout_marginLeft="30dp"-->
+            <!--        android:layout_marginRight="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_pwd"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirm_pwd_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/confirm_pwd"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="0dp"-->
+            <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--        app:layout_constraintRight_toRightOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/register_password"-->
+            <!--        android:layout_marginTop="25dp"-->
+            <!--        android:layout_marginLeft="30dp"-->
+            <!--        android:layout_marginRight="30dp"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mob_num"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                app:prefixText="+91"
+                app:helperTextEnabled="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:counterMaxLength="10"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="@color/red"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                app:counterEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_pwd">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mob_num_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Contact Number"
+                    android:maxLength="10"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/mob_num"-->
+            <!--        android:layout_width="0dp"-->
+            <!--        android:layout_height="0dp"-->
+            <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--        app:layout_constraintRight_toRightOf="parent"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/confirm_pwd"-->
+            <!--        android:layout_marginTop="25dp"-->
+            <!--        android:layout_marginLeft="30dp"-->
+            <!--        android:layout_marginRight="30dp"/>-->
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Register"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mob_num" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
